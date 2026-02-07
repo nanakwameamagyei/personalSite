@@ -1,47 +1,24 @@
-feather.replace();
-
-const phrases = [
-  "Researcher",
-  "IT Consultant",
-  "UX/Frontend Developer",
-  "Cloud Solutions Architect",
-];
-
-let index = 0; // Current phrase index
-let charIndex = 0; // Current character index within the phrase
-const typingSpeed = 100; // Speed of typing (ms per character)
-const pauseBetweenPhrases = 2000; // Pause before starting the next phrase (ms)
-
-function typeText() {
-  const dynamicContent = document.getElementById("dynamic-content");
-  const currentPhrase = phrases[index];
-
-  if (charIndex < currentPhrase.length) {
-    // Add the next character to the text content
-    dynamicContent.textContent += currentPhrase[charIndex];
-    charIndex++;
-    setTimeout(typeText, typingSpeed);
+// Get the button
+const backToTopButton = document.getElementById('back-to-top');
+      
+// When the user scrolls down 300px from the top, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backToTopButton.style.opacity = '1';
+    backToTopButton.style.visibility = 'visible';
+    backToTopButton.style.transform = 'translateY(0)';
   } else {
-    // Pause, then move to the next phrase
-    setTimeout(() => {
-      clearText();
-    }, pauseBetweenPhrases);
+    backToTopButton.style.opacity = '0';
+    backToTopButton.style.visibility = 'hidden';
+    backToTopButton.style.transform = 'translateY(10px)';
   }
-}
-
-function clearText() {
-  const dynamicContent = document.getElementById("dynamic-content");
-  if (dynamicContent.textContent.length > 0) {
-    // Remove one character at a time
-    dynamicContent.textContent = dynamicContent.textContent.slice(0, -1);
-    setTimeout(clearText, typingSpeed);
-  } else {
-    // Move to the next phrase
-    charIndex = 0;
-    index = (index + 1) % phrases.length; // Loop back to the first phrase
-    typeText();
-  }
-}
-
-// Start the typing effect
-typeText();
+};
+      
+// Smooth scroll to top
+backToTopButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
