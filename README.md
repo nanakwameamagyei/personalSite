@@ -142,7 +142,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📬 Contact
 Nana Kwame Amagyei
 - GitHub: [@nanakwameamagyei](https://github.com/nanakwameamagyei)
-- LinkedIn: [Your LinkedIn Profile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/nana-kwame-amagyei-a4b89268/)
+- LinkedIn: [(https://www.linkedin.com/in/nana-kwame-amagyei-a4b89268/)]
 - Email: your.nanakwameamagyei@gmail.com
 
 ## 🙏 Acknowledgments
