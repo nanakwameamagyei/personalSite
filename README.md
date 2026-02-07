@@ -140,10 +140,11 @@ While this is a personal portfolio, suggestions are welcome:
 This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
-Nana Kwame Amagyei
-- GitHub: [@nanakwameamagyei](https://github.com/nanakwameamagyei)
-- LinkedIn: [(https://www.linkedin.com/in/nana-kwame-amagyei-a4b89268/)]
-- Email: your.nanakwameamagyei@gmail.com
+**Nana Kwame Amagyei**  
+📍 Norway  
+📧 nanakwameamagyei@gmail.com  
+🔗 [GitHub](https://github.com/nanakwameamagyei)  
+💼 [LinkedIn](https://www.linkedin.com/in/nana-kwame-amagyei-a4b89268/)  
 
 ## 🙏 Acknowledgments
 - Tailwind CSS for the utility-first framework
